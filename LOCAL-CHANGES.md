@@ -21,7 +21,7 @@ rebase 后扫一遍本表：**上游自己实现了某条改动，就删掉那�
 
 | skill | 本地改动 | 为什么 | 上游状态 | 模型情况 | 提交 |
 |---|---|---|---|---|---|
-| [`implement`](./skills/engineering/implement/SKILL.md) | 收口段由「先 review 后 commit」两段合并为一段：commit（作 diff 固定锚点）→ `code-review` → 终态 commit | `code-review` 按固定点取 diff；未提交的工作树没有锚点，评审面会漂移 | 未解决。上游 `6d6a5b9` 只加了 ticket 拉取，收口顺序仍是 review 在前 | 来源未记录（2026-10-27 在项目侧直接改，无登记）；已验证：无；失效：无 | `1fc1986` |
+| [`implement`](./skills/engineering/implement/SKILL.md) | 收口段由「先 review 后 commit」两段合并为一段：commit（作 diff 固定锚点）→ `code-review` → 终态 commit | `code-review` 按固定点取 diff；未提交的工作树没有锚点，评审面会漂移 | 未解决。上游 `6d6a5b9` 只加了 ticket 拉取，收口顺序仍是 review 在前 | 来源=opencode-go/deepseek-v4.1-flash-1017@pi(reasoning=high)；已验证=无（迁入时只做逐字节核对，未用该模型实跑 `/implement` 收口流程）；失效=无 | `1fc1986` |
 
 ## 「模型情况」列的口径
 
